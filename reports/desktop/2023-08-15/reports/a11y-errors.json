@@ -1,0 +1,361 @@
+[
+  {
+    "id": "aria-allowed-attr",
+    "title": "`[aria-*]` attributes do not match their roles",
+    "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn more](https://web.dev/aria-allowed-attr/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-174-A",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,4,DIV,0,SECTION,0,DIV,1,DIV,0,UL,0,LI,0,A",
+            "selector": "div.js-tab-view > ul.row > li.js-tab-view__link > a#tabcontrol-1",
+            "boundingRect": {
+              "top": 2379,
+              "bottom": 2426,
+              "left": 105,
+              "right": 235,
+              "width": 130,
+              "height": 47
+            },
+            "snippet": "<a id=\"tabcontrol-1\" href=\"#tab-1\" role=\"heading\" aria-level=\"3\" aria-controls=\"tab-1\" aria-selected=\"false\" tabindex=\"0\">",
+            "nodeLabel": " Niger",
+            "explanation": "Fix any of the following:\n  ARIA attribute is not allowed: aria-selected=\"false\""
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-175-A",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,4,DIV,0,SECTION,0,DIV,1,DIV,0,UL,1,LI,0,A",
+            "selector": "div.js-tab-view > ul.row > li.js-tab-view__link > a#tabcontrol-2",
+            "boundingRect": {
+              "top": 2391,
+              "bottom": 2422,
+              "left": 325,
+              "right": 448,
+              "width": 123,
+              "height": 31
+            },
+            "snippet": "<a id=\"tabcontrol-2\" href=\"#tab-2\" role=\"heading\" aria-level=\"3\" aria-controls=\"tab-2\" aria-selected=\"false\" tabindex=\"0\">",
+            "nodeLabel": " Australia",
+            "explanation": "Fix any of the following:\n  ARIA attribute is not allowed: aria-selected=\"false\""
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-176-A",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,4,DIV,0,SECTION,0,DIV,1,DIV,0,UL,2,LI,0,A",
+            "selector": "div.js-tab-view > ul.row > li.js-tab-view__link > a#tabcontrol-3",
+            "boundingRect": {
+              "top": 2391,
+              "bottom": 2422,
+              "left": 538,
+              "right": 701,
+              "width": 163,
+              "height": 31
+            },
+            "snippet": "<a id=\"tabcontrol-3\" href=\"#tab-3\" role=\"heading\" aria-level=\"3\" aria-controls=\"tab-3\" aria-selected=\"false\" tabindex=\"0\">",
+            "nodeLabel": " New Zealand",
+            "explanation": "Fix any of the following:\n  ARIA attribute is not allowed: aria-selected=\"false\""
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      }
+    },
+    "errorCount": 3
+  },
+  {
+    "id": "aria-required-children",
+    "title": "Elements with an ARIA `[role]` that require children to contain a specific `[role]` are missing some or all of those required children.",
+    "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more](https://web.dev/aria-required-children/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-353-UL",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,4,DIV,0,SECTION,0,DIV,1,DIV,0,UL",
+            "selector": "section.module > div.front-page-countries__wrapper > div.js-tab-view > ul.row",
+            "boundingRect": {
+              "top": 2382,
+              "bottom": 2424,
+              "left": 45,
+              "right": 1305,
+              "width": 1260,
+              "height": 42
+            },
+            "snippet": "<ul class=\"row js-tab-view__links fp-countries-links\" role=\"tablist\">",
+            "nodeLabel": " Niger\n Australia\n New Zealand",
+            "explanation": "Fix any of the following:\n  Required ARIA child role not present: tab"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-354-UL",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,6,DIV,0,SECTION,0,DIV,2,DIV,0,DIV,1,UL",
+            "selector": "div.front-page-policy-issues__wrapper > div.frame > div.tab-view > ul.js-tab-view__links",
+            "boundingRect": {
+              "top": 3861,
+              "bottom": 3962,
+              "left": 105,
+              "right": 1245,
+              "width": 1140,
+              "height": 101
+            },
+            "snippet": "<ul class=\"js-tab-view__links policy-issues__links\" aria-label=\"Policy Issues\" role=\"tablist\">",
+            "nodeLabel": "HUMAN RIGHTS AND DEMOCRACY\nGLOBAL HEALTH\nECONOMIC PROSPERITY AND TRADE POLICY",
+            "explanation": "Fix any of the following:\n  Required ARIA child role not present: tab"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131"
+        ]
+      }
+    },
+    "errorCount": 2
+  },
+  {
+    "id": "heading-order",
+    "title": "Heading elements are not in a sequentially-descending order",
+    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more](https://web.dev/heading-order/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-355-H3",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,1,DIV,0,SECTION,3,DIV,0,DIV,0,DIV,4,H3",
+            "selector": "div.row > div.front-page-hero__info > div.front-page-hero__info-wrapper > h3.front-page-hero__subhead",
+            "boundingRect": {
+              "top": 385,
+              "bottom": 444,
+              "left": 105,
+              "right": 563,
+              "width": 458,
+              "height": 59
+            },
+            "snippet": "<h3 class=\"front-page-hero__subhead\">",
+            "nodeLabel": "Cultural heritage is at the heart of national and community identity.",
+            "explanation": "Fix any of the following:\n  Heading order invalid"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  },
+  {
+    "id": "listitem",
+    "title": "List items (`<li>`) are not contained within `<ul>` or `<ol>` parent elements.",
+    "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>` or `<ol>` to be announced properly. [Learn more](https://web.dev/listitem/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-356-LI",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,4,DIV,0,SECTION,0,DIV,1,DIV,0,UL,0,LI",
+            "selector": "div.front-page-countries__wrapper > div.js-tab-view > ul.row > li.js-tab-view__link",
+            "boundingRect": {
+              "top": 2382,
+              "bottom": 2424,
+              "left": 105,
+              "right": 235,
+              "width": 130,
+              "height": 42
+            },
+            "snippet": "<li class=\"js-tab-view__link fp-countries-link\n\t\t\t\t\t\t\t\t\t\tactive\t\t\t\t\t\t\t\t\t\">",
+            "nodeLabel": " Niger",
+            "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element without a role, or a role=\"list\""
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-357-LI",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,4,DIV,0,SECTION,0,DIV,1,DIV,0,UL,1,LI",
+            "selector": "div.front-page-countries__wrapper > div.js-tab-view > ul.row > li.js-tab-view__link",
+            "boundingRect": {
+              "top": 2382,
+              "bottom": 2424,
+              "left": 325,
+              "right": 448,
+              "width": 123,
+              "height": 42
+            },
+            "snippet": "<li class=\"js-tab-view__link fp-countries-link\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\">",
+            "nodeLabel": " Australia",
+            "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element without a role, or a role=\"list\""
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-358-LI",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,4,DIV,0,SECTION,0,DIV,1,DIV,0,UL,2,LI",
+            "selector": "div.front-page-countries__wrapper > div.js-tab-view > ul.row > li.js-tab-view__link",
+            "boundingRect": {
+              "top": 2382,
+              "bottom": 2424,
+              "left": 538,
+              "right": 701,
+              "width": 163,
+              "height": 42
+            },
+            "snippet": "<li class=\"js-tab-view__link fp-countries-link\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\">",
+            "nodeLabel": " New Zealand",
+            "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element without a role, or a role=\"list\""
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-359-LI",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,6,DIV,0,SECTION,0,DIV,2,DIV,0,DIV,1,UL,0,LI",
+            "selector": "div.frame > div.tab-view > ul.js-tab-view__links > li.js-tab-view__link",
+            "boundingRect": {
+              "top": 3861,
+              "bottom": 3961,
+              "left": 105,
+              "right": 485,
+              "width": 380,
+              "height": 100
+            },
+            "snippet": "<li class=\"js-tab-view__link policy-issues__link\n\t\t\t\t\t\t\t\t\t\tactive\t\t\t\t\t\t\t\t\t\t\">",
+            "nodeLabel": "HUMAN RIGHTS AND DEMOCRACY",
+            "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element without a role, or a role=\"list\""
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-360-LI",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,6,DIV,0,SECTION,0,DIV,2,DIV,0,DIV,1,UL,1,LI",
+            "selector": "div.frame > div.tab-view > ul.js-tab-view__links > li.js-tab-view__link",
+            "boundingRect": {
+              "top": 3861,
+              "bottom": 3961,
+              "left": 485,
+              "right": 865,
+              "width": 380,
+              "height": 100
+            },
+            "snippet": "<li class=\"js-tab-view__link policy-issues__link\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\">",
+            "nodeLabel": "GLOBAL HEALTH",
+            "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element without a role, or a role=\"list\""
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-361-LI",
+            "path": "1,HTML,1,BODY,12,DIV,5,DIV,0,MAIN,0,ARTICLE,0,DIV,0,DIV,6,DIV,0,SECTION,0,DIV,2,DIV,0,DIV,1,UL,2,LI",
+            "selector": "div.frame > div.tab-view > ul.js-tab-view__links > li.js-tab-view__link",
+            "boundingRect": {
+              "top": 3861,
+              "bottom": 3961,
+              "left": 865,
+              "right": 1245,
+              "width": 380,
+              "height": 100
+            },
+            "snippet": "<li class=\"js-tab-view__link policy-issues__link\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\">",
+            "nodeLabel": "ECONOMIC PROSPERITY AND TRADE POLICY",
+            "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element without a role, or a role=\"list\""
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      }
+    },
+    "errorCount": 6
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "heading-order",
+    "title": "Heading elements are not in a sequentially-descending order",
+    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more](https://web.dev/heading-order/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "11-297-H4",
+            "path": "1,HTML,1,BODY,15,DIV,0,DIV,1,DIV,0,DIV,1,H4",
+            "selector": "div.wmpci-popup-body > div.wpmci-popup-cnt-wrp > div.wpmci-popup-cnt-inr-wrp > h4",
+            "boundingRect": {
+              "top": 4864,
+              "bottom": 4906,
+              "left": 8,
+              "right": 758,
+              "width": 750,
+              "height": 42
+            },
+            "snippet": "<h4>",
+            "nodeLabel": "The Lessons of 1989: Freedom and Our Future",
+            "explanation": "Fix any of the following:\n  Heading order invalid"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  }
+]
